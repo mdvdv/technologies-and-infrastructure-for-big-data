@@ -1,1 +1,0 @@
-from flickr.api import API
