@@ -62,4 +62,3 @@ In order to increase the efficiency of training, we used augmentation close to I
 5. We validated model on the first batch of the test set and visualized prediction of the model. The final accuracy of the model after 25 training epochs was `99.9%` on the training set and `94.8%` on the test one.
 
 ![image](https://user-images.githubusercontent.com/83948828/179053138-badbe70e-be8d-475b-a7be-d1d8673d4490.png)
-![image](https://user-images.githubusercontent.com/83948828/179053159-42205991-3ba8-4340-a17d-a5224a18b997.png)
