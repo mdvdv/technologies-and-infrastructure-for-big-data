@@ -11,8 +11,9 @@ Group: J4322c
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
+<h2>MAIN</h2>
 
-1. We used `PyTorch` framework to load and fine-tune the pretrained model, `Catalyst` framework to speed up the model training process and `FlickrAPI` to connect to the www.flickr.com database API.  We also used `PySpark` interface to access `Pandas` API through `Apache Spark` framework. This allowed us to store, access and pre-process data with high speed and optimization.
+1. We used `PyTorch` framework to load and fine-tune pretrained model, `Catalyst` framework to speed up the model training process and `FlickrAPI` to connect to the www.flickr.com database API.  We also used `PySpark` interface to access `Pandas` API through `Apache Spark` framework. This allowed us to store, access and pre-process data with high speed and optimization.
 
 ```python
 from catalyst import dl
@@ -41,7 +42,7 @@ API_KEY = '809322371031dd7403805902a5aaddd1'
 API_SECRET = '01590df66d97c93d'
 ```
 
-3. We bring to your attention solution to the problem of classifying land transport in 10 categories: bicycle, bus, car, excavator, motorbike, scooter, snowmobile, train, truck, wagon. To begin with, we created a directory in which our data set will be located.
+3. We bring to your attention solution to the problem of classifying land transport in 10 categories: `bicycle`, `bus`, `car`, `excavator`, `motorbike`, `scooter`, `snowmobile`, `train`, `truck`, `wagon`. To begin with, we created a directory in which our data set will be located.
 
 The final directory looks like this:
 ```
@@ -55,7 +56,7 @@ dataset/
        ...
 ```
 
-4. We used `ResNet-18` model pre-trained on the ImageNet dataset. To work with it, we frozed model layers, except for the batch normalization and the last two convolutional layers. This allowed us to use the experience of ImageNet training and at the same time to teach model to find high-frequency features on our images. The output of our model is 10 neurons.
+4. We used `ResNet-18` model pre-trained on ImageNet dataset. To work with it, we frozed model layers, except for the batch normalization and the last two convolutional layers. This allowed us to use the experience of ImageNet training and at the same time to teach model to find high-frequency features on our images. The output of model is 10 neurons.
 
 In order to increase the efficiency of training, we used augmentation close to ImageNet. We applied image resizing to 224×224 size and normalization of pixel intensity values. The size of the training and test samples were 75% and 25% of the total set, respectively.
 
