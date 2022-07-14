@@ -8,8 +8,8 @@ Group: J4322c
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
 
 <h2>MAIN</h2>
 
@@ -57,7 +57,6 @@ dataset/
 ```
 
 4. We used `ResNet-18` model pre-trained on ImageNet dataset. To work with it, we frozed model layers, except for the batch normalization and the last two convolutional layers. This allowed us to use the experience of ImageNet training and at the same time to teach model to find high-frequency features on our images. The output of model is 10 neurons.
-
 In order to increase the efficiency of training, we used augmentation close to ImageNet. We applied image resizing to 224×224 size and normalization of pixel intensity values. The size of the training and test samples were 75% and 25% of the total set, respectively.
 
 5. We validated model on the first batch of the test set and visualized prediction of the model. The final accuracy of the model after 25 training epochs was `99.9%` on the training set and `94.8%` on the test one.
